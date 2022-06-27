@@ -1,14 +1,12 @@
 package org.d2jsp.d2event.players;
 
 import com.google.common.collect.Lists;
-import lombok.NoArgsConstructor;
 import org.d2jsp.d2event.model.Char;
 import org.d2jsp.d2event.model.D2Build;
 import org.d2jsp.d2event.model.Player;
 
 import java.util.List;
 
-@NoArgsConstructor
 public class Mre extends Player {
 
     @Override

@@ -14,6 +14,7 @@ import static org.d2jsp.d2event.logic.BasicStringBuilder.buildBasicString;
 public class RipStringBuilder {
     public static String createRipString(final List<Player> ripSequence) {
         Map<Player, Integer> rips = ripSequence.stream()
+                .distinct()
                 .collect(Collectors.toMap(player -> player, player -> 0));
 
         List<String> playerNames = new ArrayList<>();
