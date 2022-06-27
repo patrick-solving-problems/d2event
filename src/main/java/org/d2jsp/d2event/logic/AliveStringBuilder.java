@@ -5,7 +5,9 @@ import org.d2jsp.d2event.model.Char;
 import org.d2jsp.d2event.model.Player;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.d2jsp.d2event.logic.BasicStringBuilder.buildBasicString;
@@ -30,6 +32,6 @@ public class AliveStringBuilder {
             playerProgress.add(aChar.getProgress());
         }
 
-        return "Alive:\n" + buildBasicString(Lists.newArrayList(playerNames, playerLevels, playerBuilds, playerProgress));
+        return "Alive:\n" + buildBasicString(Lists.newArrayList(playerNames, playerLevels, playerBuilds, playerProgress), Set.of(0,2,3));
     }
 }

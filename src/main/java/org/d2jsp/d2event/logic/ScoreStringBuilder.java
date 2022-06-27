@@ -4,7 +4,9 @@ import org.d2jsp.d2event.model.Char;
 import org.d2jsp.d2event.model.Player;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 import static org.d2jsp.d2event.logic.BasicStringBuilder.buildBasicString;
@@ -43,7 +45,7 @@ public class ScoreStringBuilder {
                 .map(player -> " insgesamt " + player.calcScore() + " Punkte")
                 .collect(Collectors.toList()));
 
-        return "Score:\n" + buildBasicString(lists);
+        return "Score:\n" + buildBasicString(lists, Set.of(0));
     }
 
     private static Char getChar(Player player, int i) {
