@@ -27,7 +27,7 @@ public class AliveStringBuilder {
 
         for (Char aChar : chars) {
             playerNames.add(aChar.getPlayer().getName());
-            playerLevels.add(String.valueOf(aChar.getLevel()));
+            playerLevels.add("lvl " + aChar.getLevel());
             playerBuilds.add(String.valueOf(aChar.getD2Build()));
             playerProgress.add(aChar.getProgress());
         }

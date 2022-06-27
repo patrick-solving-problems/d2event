@@ -42,7 +42,10 @@ public class ScoreStringBuilder {
 
         // Sum score
         lists.add(players.stream()
-                .map(player -> " insgesamt " + player.calcScore() + " Punkte")
+                .map(player -> "=")
+                .collect(Collectors.toList()));
+        lists.add(players.stream()
+                .map(player -> "" + player.calcScore() + " Punkte")
                 .collect(Collectors.toList()));
 
         return "Score:\n" + buildBasicString(lists, Set.of(0));

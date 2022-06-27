@@ -10,7 +10,7 @@ import java.util.*;
 public class CharRoller {
 
     public static void main(String[] args) {
-        rollChars(3, D2Build.FIRE_SORC);
+        rollChars(3, null);
     }
 
     private static void rollChars(int rolls, D2Build lastBuild) {

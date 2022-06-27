@@ -25,7 +25,7 @@ public class RipStringBuilder {
             rips.put(player, rips.get(player) + 1);
 
             playerNames.add(deadChar.getPlayer().getName());
-            playerLevels.add(String.valueOf(deadChar.getLevel()));
+            playerLevels.add("lvl " + deadChar.getLevel());
             playerBuilds.add(String.valueOf(deadChar.getD2Build()));
             ripCause.add(deadChar.getRipCause());
         }
