@@ -3,6 +3,7 @@ package org.d2jsp.d2event.model;
 import lombok.Data;
 
 import java.util.List;
+import java.util.stream.IntStream;
 
 @Data
 public abstract class Player {
@@ -12,8 +13,11 @@ public abstract class Player {
     List<Char> dead;
 
     public abstract String name();
+
     public abstract List<Char> alive();
+
     public abstract List<Char> dead();
+
     public abstract Player create();
 
     public Player build() {
@@ -28,6 +32,15 @@ public abstract class Player {
         player.getDead().forEach(aChar -> aChar.setPlayer(player));
         player.getDead().forEach(aChar -> aChar.setAlive(false));
         return player;
+    }
+
+    public Integer calcScore() {
+        return alive().stream()
+                .flatMapToInt(aChar -> IntStream.of(aChar.score()))
+                .sum()
+                + dead().stream()
+                .flatMapToInt(aChar -> IntStream.of(aChar.score()))
+                .sum();
     }
 
 }

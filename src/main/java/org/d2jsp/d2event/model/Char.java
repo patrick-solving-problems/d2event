@@ -17,4 +17,11 @@ public class Char {
     private String progress;
     private String ripCause;
 
+    public Integer score() {
+        return (int) Math.floor(Math.pow(1.1, level));
+    }
+
+    public String printScoreAndLvl() {
+        return score() + " (lvl " + level + ")";
+    }
 }
