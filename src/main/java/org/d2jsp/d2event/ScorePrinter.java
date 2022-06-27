@@ -7,6 +7,7 @@ import java.awt.Toolkit;
 import java.util.List;
 
 import java.awt.datatransfer.StringSelection;
+import java.util.stream.Collectors;
 
 public class ScorePrinter {
 
@@ -21,7 +22,8 @@ public class ScorePrinter {
                 + AliveStringBuilder.createAliveString(players) + "\n"
                 + RipStringBuilder.createRipString(ripSequence) + "\n"
                 + ScoreStringBuilder.createScoreString(players)
-                + "[/CODE]";
+                + "[/CODE]\n\n"
+                + linkAllPlayers(players);
 
         // Console log
         System.out.println(resultString);
@@ -30,5 +32,11 @@ public class ScorePrinter {
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(
                 new StringSelection(resultString), null
         );
+    }
+
+    private static String linkAllPlayers(final List<Player> players) {
+        return players.stream()
+                .map(player -> "^" + player.getName())
+                .collect(Collectors.joining(" "));
     }
 }

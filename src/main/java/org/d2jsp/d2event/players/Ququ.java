@@ -19,7 +19,7 @@ public class Ququ extends Player {
                 Char.builder()
                         .d2Build(D2Build.PSN_JAVA)
                         .level(62)
-                        .progress("a5 nm")
+                        .progress("a1 hell")
                         .build()
         );
     }
