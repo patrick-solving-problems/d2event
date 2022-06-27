@@ -1,4 +1,4 @@
-package org.d2jsp.d2event;
+package org.d2jsp.d2event.model;
 
 public enum D2Build {
 
