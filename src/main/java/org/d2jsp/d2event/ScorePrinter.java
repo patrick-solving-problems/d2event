@@ -13,11 +13,11 @@ public class ScorePrinter {
 
     public static void main(final String[] args) {
 
-        // Vorbereitung
+        // Prepare
         final List<Player> players = PlayerBuilder.create();
         final List<Player> ripSequence = RipSequence.create();
 
-        // Berechnung
+        // Calculate
         final String resultString = "[CODE]\n"
                 + AliveStringBuilder.createAliveString(players) + "\n"
                 + RipStringBuilder.createRipString(ripSequence) + "\n"
@@ -28,7 +28,7 @@ public class ScorePrinter {
         // Console log
         System.out.println(resultString);
 
-        // Und in den Zwischenspeicher
+        // Copy into clipboard
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(
                 new StringSelection(resultString), null
         );
