@@ -28,15 +28,20 @@ public class ScoreStringBuilder {
         ).max().getAsInt();
         for (int i = 0; i < maxChars; i++) {
             List<String> singleCharScoreList = new ArrayList<>();
+            List<String> plusSigns = new ArrayList<>();
 
             for (Player player : players) {
                 Char aChar = getChar(player, i);
                 if (aChar == null) {
                     singleCharScoreList.add("");
+                    plusSigns.add("");
                 } else {
                     singleCharScoreList.add(aChar.printScoreAndLvl());
+                    plusSigns.add("+");
                 }
             }
+            if (i != 0)
+                lists.add(plusSigns);
             lists.add(singleCharScoreList);
         }
 
