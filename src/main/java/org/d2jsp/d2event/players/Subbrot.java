@@ -17,7 +17,7 @@ public class Subbrot extends Player {
     public List<Char> alive() {
         return Lists.newArrayList(
                 Char.builder()
-                        .d2Build(D2Build.ARCTIC_BLAST_MOLTEN_BOULDER_DRUID)
+                        .d2Build(D2Build.MOLTEN_BOULDER_DRUID)
                         .level(60)
                         .progress("a1 hell")
                         .build()

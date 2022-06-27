@@ -23,7 +23,7 @@ public class Mre extends Player {
     public List<Char> alive() {
         return Lists.newArrayList(
                 Char.builder()
-                        .d2Build(D2Build.SUMMON_DRUID)
+                        .d2Build(D2Build.SUMMONER_DRUID)
                         .level(81)
                         .progress("story durch")
                         .build()
