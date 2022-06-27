@@ -10,6 +10,7 @@ public class PlayerBuilder {
 
     public static List<Player> create() {
         return Lists.newArrayList(
+                new Abulabdah().build(),
                 new Brudii().build(),
                 new Cardano().build(),
                 new Fernsehen().build(),

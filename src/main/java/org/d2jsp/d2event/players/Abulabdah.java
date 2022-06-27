@@ -7,35 +7,30 @@ import org.d2jsp.d2event.model.Player;
 
 import java.util.List;
 
-public class Brudii extends Player {
+public class Abulabdah extends Player {
     @Override
     public String name() {
-        return "brudii";
+        return "AbulAbdah";
     }
 
     @Override
     public List<Char> alive() {
         return Lists.newArrayList(
                 Char.builder()
-                        .d2Build(D2Build.COLD_SORC)
-                        .level(28)
-                        .progress("a1 nm")
+                        .d2Build(D2Build.BLADEFURY_ASSA)
+                        .level(1)
+                        .progress("a1 hell")
                         .build()
         );
     }
 
     @Override
     public List<Char> dead() {
-        return Lists.newArrayList(
-                Char.builder()
-                        .d2Build(D2Build.LIGHT_SORC)
-                        .level(56)
-                        .ripCause("travi nm beim rushen")
-                        .build());
+        return Lists.newArrayList();
     }
 
     @Override
     public Player create() {
-        return new Brudii();
+        return new Abulabdah();
     }
 }
