@@ -16,11 +16,6 @@ public class Brudii extends Player {
     @Override
     public List<Char> alive() {
         return Lists.newArrayList(
-                Char.builder()
-                        .d2Build(D2Build.COLD_SORC)
-                        .level(28)
-                        .progress("a1 nm")
-                        .build()
         );
     }
 
@@ -31,7 +26,13 @@ public class Brudii extends Player {
                         .d2Build(D2Build.LIGHT_SORC)
                         .level(56)
                         .ripCause("travi nm beim rushen")
-                        .build());
+                        .build(),
+                Char.builder()
+                        .d2Build(D2Build.COLD_SORC)
+                        .level(41)
+                        .ripCause("a5 nm, wollte zu baal telen xd")
+                        .build()
+        );
     }
 
     @Override

@@ -19,7 +19,7 @@ public class Abulabdah extends Player {
                 Char.builder()
                         .d2Build(D2Build.BLADEFURY_ASSA)
                         .level(1)
-                        .progress("a1 hell")
+                        .progress("a1 norm")
                         .build()
         );
     }

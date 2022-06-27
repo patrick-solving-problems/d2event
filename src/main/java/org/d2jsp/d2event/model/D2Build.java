@@ -11,7 +11,7 @@ public enum D2Build {
     COLD_FIRE_BOWA("cold/fire bowa"),
     PHYS_BOWA("phys bowa"),
     KICKSIN("kicksin"),
-    BLADEFURY_ASSA("bladefury assa"),
+    BLADEFURY_ASSA("blade fury assa"),
     FIRE_TRAP_ASSA("fire trap assa"),
     WARCRY_BARB("warcry barb"),
     WW_BARB("ww barb"),

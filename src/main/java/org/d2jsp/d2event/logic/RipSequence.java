@@ -14,7 +14,8 @@ public class RipSequence {
                 new Fernsehen().build(),
                 new Fernsehen().build(),
                 new Brudii().build(),
-                new Swayy().build()
+                new Swayy().build(),
+                new Brudii().build()
         );
     }
 }
