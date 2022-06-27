@@ -16,10 +16,12 @@ public class ScorePrinter {
         final List<Player> ripSequence = RipSequence.create();
 
         final String resultString = "[CODE]\n"
-                + AliveStringBuilder.createAliveString(players) + "\n\n"
-                + RipStringBuilder.createRipString(ripSequence) + "\n\n"
+                + AliveStringBuilder.createAliveString(players) + "\n"
+                + RipStringBuilder.createRipString(ripSequence) + "\n"
                 + ScoreStringBuilder.createScoreString(players)
                 + "\n[/CODE]";
+
+        System.out.println(resultString); // auch im Zwischenspeicher
 
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(
                 new StringSelection(resultString), null

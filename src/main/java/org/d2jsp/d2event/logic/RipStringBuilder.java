@@ -1,5 +1,6 @@
 package org.d2jsp.d2event.logic;
 
+import com.google.common.collect.Lists;
 import org.d2jsp.d2event.model.Char;
 import org.d2jsp.d2event.model.Player;
 
@@ -30,7 +31,7 @@ public class RipStringBuilder {
             ripCause.add(deadChar.getRipCause());
         }
 
-        return "Dead:\n" + buildBasicString(playerNames, playerLevels, playerBuilds, ripCause);
+        return "Dead:\n" + buildBasicString(Lists.newArrayList(playerNames, playerLevels, playerBuilds, ripCause));
     }
 
 }

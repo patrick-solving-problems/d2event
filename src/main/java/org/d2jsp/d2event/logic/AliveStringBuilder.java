@@ -1,5 +1,6 @@
 package org.d2jsp.d2event.logic;
 
+import com.google.common.collect.Lists;
 import org.d2jsp.d2event.model.Char;
 import org.d2jsp.d2event.model.Player;
 
@@ -29,6 +30,6 @@ public class AliveStringBuilder {
             playerProgress.add(aChar.getProgress());
         }
 
-        return "Alive:\n" + buildBasicString(playerNames, playerLevels, playerBuilds, playerProgress);
+        return "Alive:\n" + buildBasicString(Lists.newArrayList(playerNames, playerLevels, playerBuilds, playerProgress));
     }
 }
