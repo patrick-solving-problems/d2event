@@ -18,8 +18,8 @@ public class Ququ extends Player {
         return Lists.newArrayList(
                 Char.builder()
                         .d2Build(D2Build.PSN_JAVA)
-                        .level(69)
-                        .progress("a1 hell")
+                        .level(79)
+                        .progress("a4 hell")
                         .build()
         );
     }

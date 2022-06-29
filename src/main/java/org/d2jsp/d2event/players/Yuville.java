@@ -18,8 +18,8 @@ public class Yuville extends Player {
         return Lists.newArrayList(
                 Char.builder()
                         .d2Build(D2Build.COLD_FIRE_BOWA)
-                        .level(73)
-                        .progress("a1 hell")
+                        .level(79)
+                        .progress("a4 hell")
                         .build()
         );
     }

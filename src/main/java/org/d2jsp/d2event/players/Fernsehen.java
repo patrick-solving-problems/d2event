@@ -18,8 +18,8 @@ public class Fernsehen extends Player {
         return Lists.newArrayList(
                 Char.builder()
                         .d2Build(D2Build.FIRE_SORC)
-                        .level(78)
-                        .progress("a2 hell")
+                        .level(82)
+                        .progress("a4 hell")
                         .build()
         );
     }

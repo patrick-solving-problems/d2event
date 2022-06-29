@@ -18,7 +18,7 @@ public class Multifunktionsdrucker extends Player {
         return Lists.newArrayList(
                 Char.builder()
                         .d2Build(D2Build.THROW_BARB)
-                        .level(84)
+                        .level(85)
                         .progress("a5 hell")
                         .build()
         );

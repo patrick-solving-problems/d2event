@@ -18,8 +18,8 @@ public class Cardano extends Player {
         return Lists.newArrayList(
                 Char.builder()
                         .d2Build(D2Build.PHYS_BOWA)
-                        .level(80)
-                        .progress("a3 hell")
+                        .level(84)
+                        .progress("a5 hell")
                         .build()
         );
     }
