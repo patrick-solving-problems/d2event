@@ -16,11 +16,6 @@ public class Multifunktionsdrucker extends Player {
     @Override
     public List<Char> alive() {
         return Lists.newArrayList(
-                Char.builder()
-                        .d2Build(D2Build.THROW_BARB)
-                        .level(85)
-                        .progress("a5 hell")
-                        .build()
         );
     }
 
@@ -31,6 +26,11 @@ public class Multifunktionsdrucker extends Player {
                         .d2Build(D2Build.WW_BARB)
                         .level(50)
                         .ripCause("nm CS bei seis")
+                        .build(),
+                Char.builder()
+                        .d2Build(D2Build.THROW_BARB)
+                        .level(88)
+                        .ripCause("banned")
                         .build()
         );
     }

@@ -25,12 +25,18 @@ public class RipStringBuilder {
             rips.put(player, rips.get(player) + 1);
 
             playerNames.add(deadChar.getPlayer().getName());
-            playerLevels.add("lvl " + deadChar.getLevel());
+            playerLevels.add("lvl " + levelString(deadChar.getLevel()));
             playerBuilds.add(String.valueOf(deadChar.getD2Build()));
             ripCause.add(deadChar.getRipCause());
         }
 
         return "Dead:\n" + buildBasicString(Lists.newArrayList(playerNames, playerLevels, playerBuilds, ripCause), Set.of(0,2,3));
+    }
+
+    private static String levelString(int level) {
+        if (level < 10)
+            return " " + level;
+        return "" + level;
     }
 
 }

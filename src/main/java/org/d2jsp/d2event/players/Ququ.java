@@ -16,17 +16,18 @@ public class Ququ extends Player {
     @Override
     public List<Char> alive() {
         return Lists.newArrayList(
-                Char.builder()
-                        .d2Build(D2Build.PSN_JAVA)
-                        .level(79)
-                        .progress("a4 hell")
-                        .build()
         );
     }
 
     @Override
     public List<Char> dead() {
-        return Lists.newArrayList();
+        return Lists.newArrayList(
+                Char.builder()
+                        .d2Build(D2Build.PSN_JAVA)
+                        .level(86)
+                        .ripCause("bei einem shenk run")
+                        .build()
+        );
     }
 
     @Override

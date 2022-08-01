@@ -27,11 +27,17 @@ public class AliveStringBuilder {
 
         for (Char aChar : chars) {
             playerNames.add(aChar.getPlayer().getName());
-            playerLevels.add("lvl " + aChar.getLevel());
+            playerLevels.add("lvl " + levelString(aChar.getLevel()));
             playerBuilds.add(String.valueOf(aChar.getD2Build()));
             playerProgress.add(aChar.getProgress());
         }
 
         return "Alive:\n" + buildBasicString(Lists.newArrayList(playerNames, playerLevels, playerBuilds, playerProgress), Set.of(0,2,3));
+    }
+
+    private static String levelString(int level) {
+        if (level < 10)
+            return " " + level;
+        return "" + level;
     }
 }

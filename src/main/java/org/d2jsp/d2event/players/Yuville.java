@@ -17,16 +17,22 @@ public class Yuville extends Player {
     public List<Char> alive() {
         return Lists.newArrayList(
                 Char.builder()
-                        .d2Build(D2Build.COLD_FIRE_BOWA)
-                        .level(79)
-                        .progress("a4 hell")
+                        .d2Build(D2Build.BERSERK_BARB)
+                        .level(43)
+                        .progress("a3 nm")
                         .build()
         );
     }
 
     @Override
     public List<Char> dead() {
-        return Lists.newArrayList();
+        return Lists.newArrayList(
+                Char.builder()
+                        .d2Build(D2Build.COLD_FIRE_BOWA)
+                        .level(80)
+                        .ripCause("bei rq hell auf der ps5")
+                        .build()
+        );
     }
 
     @Override

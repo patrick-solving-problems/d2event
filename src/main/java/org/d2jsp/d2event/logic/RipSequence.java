@@ -15,7 +15,10 @@ public class RipSequence {
                 new Fernsehen().build(),
                 new Brudii().build(),
                 new Swayy().build(),
-                new Brudii().build()
+                new Brudii().build(),
+                new Yuville().build(),
+                new Ququ().build(),
+                new Multifunktionsdrucker().build()
         );
     }
 }

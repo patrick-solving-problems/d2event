@@ -10,7 +10,7 @@ import java.util.*;
 public class CharRoller {
 
     public static void main(String[] args) {
-        rollChars(3, null);
+        rollChars(5, D2Build.PSN_JAVA);
     }
 
     private static void rollChars(int rolls, D2Build lastBuild) {

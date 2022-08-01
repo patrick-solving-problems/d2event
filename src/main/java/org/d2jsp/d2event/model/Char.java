@@ -22,6 +22,12 @@ public class Char {
     }
 
     public String printScoreAndLvl() {
-        return score() + " (lvl " + level + ")";
+        return score() + " (lvl " + levelString(level) + ")";
+    }
+
+    private static String levelString(int level) {
+        if (level < 10)
+            return " " + level;
+        return "" + level;
     }
 }

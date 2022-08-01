@@ -18,8 +18,8 @@ public class Swayy extends Player {
         return Lists.newArrayList(
                 Char.builder()
                         .d2Build(D2Build.SUMMONER_NEC)
-                        .level(67)
-                        .progress("a3 hell")
+                        .level(81)
+                        .progress("a4 hell")
                         .build()
         );
     }
